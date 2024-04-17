@@ -1,4 +1,5 @@
 import { useUser } from '@auth0/nextjs-auth0/client';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
@@ -10,7 +11,14 @@ export default function Home() {
       <div>
         {!!user ? (
           <>
-            <div>You are logged in! 🤠</div>
+            <div>
+              <Image
+                src={user.picture}
+                alt={user.name}
+                width={50}
+                height={50}
+              />
+            </div>
             <Link href='/api/auth/logout'>Logout</Link>
           </>
         ) : (
