@@ -8,7 +8,13 @@ export default function Home() {
     <div>
       <h1>Welcome to Blog Bonanza! 😃</h1>
       <div>
-        <Link href='/api/auth/login'>Login</Link>
+        {!!user ? (
+          <>
+            <div>You are logged in! 🤠</div>
+          </>
+        ) : (
+          <Link href='/api/auth/login'>Login</Link>
+        )}
       </div>
     </div>
   );
