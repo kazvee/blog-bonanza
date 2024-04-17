@@ -11,6 +11,7 @@ export default function Home() {
         {!!user ? (
           <>
             <div>You are logged in! 🤠</div>
+            <Link href='/api/auth/logout'>Logout</Link>
           </>
         ) : (
           <Link href='/api/auth/login'>Login</Link>
