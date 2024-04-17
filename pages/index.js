@@ -18,6 +18,7 @@ export default function Home() {
                 width={50}
                 height={50}
               />
+              {user.email}
             </div>
             <Link href='/api/auth/logout'>Logout</Link>
           </>
