@@ -1,7 +1,6 @@
 import { withPageAuthRequired } from '@auth0/nextjs-auth0';
 
 export default function NewPost(props) {
-  console.log('New Post Props:', props);
   return (
     <div>
       <h1>This is the New Post page 📝</h1>
@@ -11,8 +10,6 @@ export default function NewPost(props) {
 
 export const getServerSideProps = withPageAuthRequired(() => {
   return {
-    props: {
-      test: 'Testing 123! 🧪',
-    },
+    props: {},
   };
 });
