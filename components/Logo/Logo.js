@@ -5,7 +5,10 @@ export const Logo = () => {
   return (
     <div className='text-3xl text-center py-4 font-heading'>
       Blog Bonanza
-      <FontAwesomeIcon icon={faSplotch} className='text-2xl text-rose-500' />
+      <FontAwesomeIcon
+        icon={faSplotch}
+        className='text-2xl text-rose-500 ml-4'
+      />
     </div>
   );
 };
